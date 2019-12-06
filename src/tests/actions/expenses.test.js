@@ -49,7 +49,7 @@ test('Should setup edit expense action object', () => {
     });
 });
 
-test('should edit expense from firebase', () => {
+test('should edit expense from firebase', (done) => {
     const store = createMockStore();
     const id = expenses[0].id;
     const updates = {
